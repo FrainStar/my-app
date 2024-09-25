@@ -7,9 +7,12 @@ function Greting(prop) {
 }
 
 function App() {
+  const [count, setCount] = useState(1);
+
   return (
     <div>
-      <Greting name="Ilya"/>
+      <h1>Счетчик: {count}</h1>
+      <button onClick={() => setCount(count + 1)}></button>
     </div>
   );
 }
